@@ -150,6 +150,3 @@ body{
     opacity:1;
     color : #fe424d;
 }
-.toggle-btn + input{
-    font-size: 0.8rem;
-}
