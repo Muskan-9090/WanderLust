@@ -14,9 +14,6 @@ module.exports.index = async (req,res)=>{
             listing.country.toLowerCase().includes(searchLocation.toLowerCase())
         ));
     }
-    if(filteredListings.length === 0){
-        req.flash("error","No results found.Try exploring something else!");
-    }
     res.render("listings/index.ejs",{allListings:filteredListings,selectedCategory});
 };
 
